@@ -556,18 +556,19 @@ img[src="./img/greece-g725f2760f_640.jpg"]{
    width: 100%;
 }
 .special-offer-cont::-webkit-scrollbar{
-    width: 60px;
+
     height: 9px;
     background-color: rgb(231, 231, 231) ;
     cursor: pointer;
     border-radius: 10px;
-    scrollbar-face-color: rgb(210,210,210); /* Firefox 63 compatibility */
-    scrollbar-track-color: rgb(46,54,69); /* Firefox 63 compatibility */
-    scrollbar-color: rgb(210,210,210) rgb(46,54,69);
-    scrollbar-width: thin;
+  
+    
   
 }
-
+.special-offer-cont{
+  
+    scrollbar-color: var(--orange) #C2D2E4;
+  }
 
 
 .special-offer-cont::-webkit-scrollbar-thumb:hover{
