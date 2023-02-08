@@ -380,7 +380,7 @@ header::after{
 
 .icons{
    max-width: 180px;
-   margin-inline: auto;
+   margin:0 auto;
    color: var(--faded-col);
 }
 
@@ -456,7 +456,7 @@ background-color: rgb(218, 217, 217);
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin-inline: auto;
+  margin:0 auto;
   max-width: 270px;
    height: 350px;
    border-radius: 15px;
