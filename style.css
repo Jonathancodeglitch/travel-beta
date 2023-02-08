@@ -455,9 +455,9 @@ background-color: rgb(218, 217, 217);
 .card{
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin:0 auto;
-  max-width: 270px;
+   width: 90%;
+   margin:0 auto;
+   max-width: 270px;
    height: 350px;
    border-radius: 15px;
    box-shadow: 1px 4px 13px rgba(0,0,0,0.1);
