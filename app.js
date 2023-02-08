@@ -12,10 +12,10 @@ menu.addEventListener("click",function(){
 
 buttonRight.addEventListener("click",()=>{
      
-    specialContainer.scrollLeft +=100
+    specialContainer.scrollLeft +=200
     console.log(specialContainer.scrollLeft)
 });
 buttonLeft.addEventListener("click",()=>{
-    specialContainer.scrollLeft -= 100
+    specialContainer.scrollLeft -= 200
 });
 

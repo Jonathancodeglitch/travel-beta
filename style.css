@@ -200,15 +200,17 @@ header{
 
 
 .header_content{
+  position: fixed;
+  width: 100%;
   background-color: #5BC0F8;
   padding: 10px 0;
- 
+ z-index: 9998;
 }
 
 .primary_header{
-   position: relative; 
+ 
    flex-wrap: nowrap;
-    z-index: 1000;
+   
 }
 
 /* navigations */
@@ -246,7 +248,7 @@ header{
 }
 
 
-@media(max-width:730px){
+@media(max-width:720px){
   
   .nav{
     position: fixed;
@@ -258,7 +260,7 @@ header{
      padding: 7rem 2rem;
      justify-content: center;
      transform: translateX(100%);
-     transition: 0.70s ease-in-out;
+     transition: transform 350ms ease-in;
   }
     .nav_list{
       flex-direction: column;
