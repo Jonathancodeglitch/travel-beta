@@ -252,7 +252,10 @@ header{
   
   .nav{
     position: fixed;
-      inset: 0 0  0 30%;
+      top: 0;
+      left: 30%;
+      right:0;
+      bottom: 0;
     flex-direction: column;
    z-index: 1000;
     align-items: flex-start;
