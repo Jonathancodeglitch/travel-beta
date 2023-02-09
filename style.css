@@ -218,14 +218,15 @@ header{
 .nav{
   flex-direction: row;
   align-items: center;
-  gap: 1.5rem;
 
+}
+.nav > *+* ,.nav_list >*+*{
+  margin:0 0 0 1rem;
 }
 
 .nav_list{
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
 .nav_btn{
@@ -266,6 +267,11 @@ header{
      transform: translateX(100%);
      transition: transform 350ms ease-in;
   }
+
+  .nav > *+* ,.nav_list >*+*{
+    margin:1rem 0 0 0;
+  }
+
     .nav_list{
       flex-direction: column;
      }
@@ -300,7 +306,7 @@ header{
   width: 100%;
   top: 100px;
   margin: auto;
-  max-width: 500px;
+  max-width: 400px;
   background-color: #fff;
   padding: 20px;
   color: var(--faded-col);
@@ -327,22 +333,29 @@ header{
   height: 2px;
   width: 37px;
   background-color: var(--faded-col);
-  margin:1.7rem 0;
+  margin: 1.7rem 0;
 }
 
 .input_count{
   display: flex;
   flex-wrap: wrap;
-   gap: 1.5rem;
+ 
+}
+
+.select_option > * + *{
+  margin: 1.5rem 0 0 0;
 }
 
 select{
+     
      outline: none;
      padding: 8px;
      width: 100%;
      display: inline-block;
      
 }
+
+
 
 option{
   width: 100%;
@@ -390,8 +403,12 @@ header::after{
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
-   gap: 5rem;
+   
 } 
+
+.category-content-sec >*+*{
+  margin-top: 5rem ;
+}
 
 .icons i{
   padding: 10px;
@@ -836,7 +853,7 @@ footer p{
     --sm-title-font:1.2rem;
   }
   .header_card{
-    width: 80%;
+    width: 85%;
   }
  .input_count .btn{
   width: 50%;
@@ -846,9 +863,21 @@ footer p{
      width:45%;
   }
 
+  .select_option > * + *{
+    margin: 0 0 1.5rem 0;
+  }
+
+  .select_option select:nth-child(2n){
+     margin-left: 1.5rem;
+  }
+
   .header_title{
     text-align: left;
+  
   }
+
+
+
 
   /* blog */
  
@@ -879,7 +908,7 @@ footer > .grid{
 
 
 .header_card{
-    width: 60%;
+    width: 90%;
 }
 
 /* blog */
