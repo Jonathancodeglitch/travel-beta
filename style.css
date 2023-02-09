@@ -391,11 +391,6 @@ header::after{
   margin-top: 3.6rem;
 }
 
-.icons{
-   max-width: 180px;
-   margin:0 auto;
-   color: var(--faded-col);
-}
 
 
 .category-content-sec{
@@ -403,12 +398,17 @@ header::after{
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
-   
+    
 } 
 
-.category-content-sec >*+*{
-  margin-top: 5rem ;
+
+
+.icons{
+  max-width: 180px;
+  margin:2.5rem auto;
+  color: var(--faded-col);
 }
+
 
 .icons i{
   padding: 10px;
