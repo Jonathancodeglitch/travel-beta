@@ -200,7 +200,8 @@ header{
 .link::after{
   content: " ";
   display: block;
-  width: 0%;
+  position: absolute;
+  width: 0px;
  height: 2px;
  background-color: var(--faded-col);
 transition:  width .30s ease-in;
@@ -209,7 +210,7 @@ transition:  width .30s ease-in;
 }
 
 .link:hover::after,.link:active::after{
- width: 100%;
+ width: 45px;
 } 
 
 
@@ -665,7 +666,6 @@ background-color: rgb(218, 217, 217);
   opacity: 0;
   
 }
-
 
 
 .from-left.appear,.from-right.appear{
