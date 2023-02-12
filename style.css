@@ -150,7 +150,7 @@ picture {
 body{
     font-family: 'Roboto', sans-serif;
     line-height: 1.2;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 .decor{
@@ -592,6 +592,7 @@ background-color: rgb(218, 217, 217);
 
 /* booking-card */
 
+
 .booking-card{
   max-width: 350px;
   width: 100%;
@@ -650,20 +651,25 @@ background-color: rgb(218, 217, 217);
   white-space: nowrap;
 }
 
+.from-left,.from-right{
+  transition: opacity 250ms ease-in, transform 350ms ease-in;
+}
+
 .from-left{
   transform: translateX(-50%);
+  opacity: 0;
 }
+
 .from-right{
   transform: translateX(50%);
+  opacity: 0;
+  
 }
 
-.from-left,.from-right{
-  
-    transition: transform 350ms ease-in;
-}
+
 
 .from-left.appear,.from-right.appear{
-  
+  opacity: 1;
   transform: translateX(0%);
 }
 
