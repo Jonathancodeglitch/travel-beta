@@ -27,3 +27,38 @@ inputButton.addEventListener("click",function(){
     console.log('torch')
       input.value=""
 });
+
+let options={
+    threshold:0,
+    rootMargin:"0px 0px -250px 0px"
+   
+}
+
+const destinationCard=document.querySelectorAll(".fade-in");
+const bookingSlide=document.querySelectorAll(".slide-in");
+
+const observer =new IntersectionObserver((entries,observer)=>{
+     entries.forEach(entry=>{
+        if(!entry.isIntersecting){
+           return;
+        }
+        else{
+            
+            entry.target.classList.add('appear')
+            observer.unobserve(entry.target)
+        }
+         
+     })
+},options)
+
+
+
+destinationCard.forEach(card=>{
+    observer.observe(card);
+})
+
+
+
+bookingSlide.forEach(booking=>{
+     observer.observe(booking)
+})
