@@ -526,7 +526,7 @@ background-color: rgb(218, 217, 217);
 
 .fade-in{
  opacity: 0;
- transition:  opacity 350ms ease-in;
+ transition:  opacity 300ms ease-in;
 }
 
 .fade-in.appear{
@@ -663,7 +663,7 @@ background-color: rgb(218, 217, 217);
 }
 
 .from-left,.from-right{
-  transition: opacity 250ms ease-in, transform 350ms ease-in;
+  transition: opacity 250ms ease-in, transform 300ms ease-in;
 }
 
 .from-left{
@@ -928,6 +928,11 @@ footer p{
 .footer-icons i{
   font-size:1.5rem;
   color: var(--orange-col);
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+.footer-icons i:hover,.footer-icons i:active{
+  transform: scale(1.4);
 }
 
 .footer-icons{

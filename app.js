@@ -14,12 +14,21 @@ menu.addEventListener("click",function(){
 
 
 buttonRight.addEventListener("click",()=>{
-     
-    specialContainer.scrollLeft +=200
-    console.log(specialContainer.scrollLeft)
+    let maxScrollLeft = specialContainer.scrollWidth - specialContainer.clientWidth
+       specialContainer.scrollLeft +=200
+      if(maxScrollLeft==specialContainer.scrollLeft){
+         buttonRight.style.color="rgb(231, 174, 67)"
+      }
+      buttonLeft.style.color="orange"
+ 
 });
 buttonLeft.addEventListener("click",()=>{
     specialContainer.scrollLeft -= 200
+    if(specialContainer.scrollLeft===0){
+     buttonLeft.style.color="rgb(231, 174, 67)"
+    }
+   buttonRight.style.color="orange"
+
 });
 
 
@@ -29,7 +38,7 @@ inputButton.addEventListener("click",function(){
 });
 
 let options={
-    threshold:0,
+    threshold:0.1,
     rootMargin:"0px 0px 0px 0px",
    
 }
