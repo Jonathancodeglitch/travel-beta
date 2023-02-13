@@ -609,10 +609,10 @@ background-color: rgb(218, 217, 217);
   width: 100%;
   padding:20px;
   border-radius: 32px;
-  box-shadow: 0px 30px 30px rgba(83, 83, 83, 0.1);
+  box-shadow: 0px 10px 74px -11px rgba(83, 83, 83,10%);
    margin-inline: auto;
    margin-top: 3rem;
-  
+   margin-bottom:3rem;
 }
 .booking-card .grid-space{
   flex-wrap: nowrap;
