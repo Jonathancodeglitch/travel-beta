@@ -29,7 +29,7 @@ inputButton.addEventListener("click",function(){
 });
 
 let options={
-    threshold:0.2,
+    threshold:0,
     rootMargin:"0px 0px 0px 0px",
    
 }
