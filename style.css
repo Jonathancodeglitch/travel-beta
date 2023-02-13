@@ -88,6 +88,9 @@ picture {
   }
 }
 
+a{
+  text-decoration: none;
+}
 
 
 /* utility class */
@@ -189,9 +192,13 @@ header{
   margin-left: 5px;
 }
 
-.links a{
-  text-decoration: none;
+
+.link a{
    color: var(--faded-col);
+}
+
+.btn_links a{
+  color: #fff;
 }
 
 .links{
